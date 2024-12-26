@@ -16,7 +16,7 @@ func main() {
 	db := database.InitDB()
 	defer db.Close()
 
-	botToken := "7418686248:AAGhuHY_c2oA0i5JNuZ01PdwRXYuV5HSleU"
+	botToken := ""
 	bot, err := telebot.NewBot(telebot.Settings{
 		Token:  botToken,
 		Poller: &telebot.LongPoller{Timeout: 10 * time.Second},
